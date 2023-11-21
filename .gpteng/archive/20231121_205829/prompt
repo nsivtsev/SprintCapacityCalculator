@@ -1,0 +1,1 @@
+Can not run "go mod init". Error message: determine module path for source directory /Users/nikolaisivtsev/Projects/SprintCapacityCalculator/backend (outside GOPATH, module path must be specified

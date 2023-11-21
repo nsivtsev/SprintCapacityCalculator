@@ -1,0 +1,21 @@
+version: '3'
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: dbname
+    ports:
+      - "3306:3306"
+  backend:
+    build: ./docker/backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+  frontend:
+    build: ./docker/frontend
+    ports:
+      - "8081:8081"
+    depends_on:
+      - backend

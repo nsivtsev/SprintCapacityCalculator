@@ -1,0 +1,23 @@
+It seems like you're trying to initialize a new Go module but you're encountering an error because your project directory is outside of your GOPATH. 
+
+The `go mod init` command is used to initialize a new module, creating a go.mod file that describes the module's dependencies. 
+
+Here's how you can resolve this issue:
+
+1. Navigate to your project directory. You can do this using the `cd` command in your terminal. For example:
+
+```bash
+cd /Users/nikolaisivtsev/Projects/SprintCapacityCalculator/backend
+```
+
+2. Once you're in your project directory, you can initialize a new Go module by specifying a module path. The module path is usually a location where your module code lives. It's often the repository location if you plan to version your code with Git, Mercurial, etc. Here's an example:
+
+```bash
+go mod init github.com/username/repo
+```
+
+Replace `github.com/username/repo` with your actual repository location. If you don't plan to version your code, you can use any string as your module path.
+
+After running the `go mod init` command with a specified module path, a new go.mod file should be created in your project directory. This file describes your module's dependencies.
+
+This concludes a fully working implementation.

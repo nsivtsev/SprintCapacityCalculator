@@ -1,0 +1,19 @@
+Web application
+
+Backend should be on GoLang.
+MySQL database.
+Vue.js frontend.
+Runs everything inside docker containers using docker-compose, Dockerfiles should be in /docker/... folder.
+
+Folder for backend code: /backend
+Folder for frontend code: /frontend
+
+There should be users, with crud functionaluty
+Users fields: 
+ - id
+ - name
+ - email
+
+ Index page is a list of users and form to edit and create them.			
+
+ Create README.md with steps how to build and run this project
